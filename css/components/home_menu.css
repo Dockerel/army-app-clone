@@ -1,0 +1,25 @@
+.home__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:40px 0;
+}
+
+.home__menu__column span {
+    font-weight: 600;
+}
+
+.home__menu__column:last-child {
+    display: flex;
+}
+
+.home__menu__column__btn {
+    color: #020202;
+    font-size: 15px;
+    background-color: #F3F3F3;
+    margin-left: 15px;
+    padding:8px;
+    border-radius: 12%;
+}
+
+

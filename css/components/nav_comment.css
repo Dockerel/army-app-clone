@@ -1,0 +1,37 @@
+.nav_comment {
+    position: fixed;
+    width:100%;
+    box-sizing: border-box;
+    bottom:0;
+    display: flex;
+    background-color: white;
+    border-top: 1px solid rgb(183, 178, 178);
+    padding:20px 0;
+}
+
+.nav_comment__column:first-child {
+    font-size: 30px;
+    width:8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav_comment__column:last-child input {
+    padding:20px 10px;
+    width:100%;
+    border: none;
+}
+
+.nav_comment__column:last-child {
+    width: 92%;
+    margin-right: 30px;
+}
+
+.nav_comment__column:last-child input::placeholder {
+    font-size: 17px;
+}
+
+.nav_comment__column:last-child input:focus {
+    outline: none;
+}

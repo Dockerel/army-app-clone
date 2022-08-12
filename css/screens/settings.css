@@ -1,0 +1,68 @@
+#settings-body {
+    height: 140vh;
+}
+
+.setting__profile {
+    display: flex;
+    margin:40px;
+    padding:30px;
+    border-radius: 20px;
+    box-shadow: 0px 5px 20px rgb(228, 228, 228);
+    align-items: center;
+    position: relative;
+}
+
+.profile_img {
+    color: var(--main-color);
+    font-size: 20px;
+    border: 1px solid rgb(183, 178, 178);
+    height:40px;
+    width:40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.profile__info {
+    display: flex;
+    flex-direction:column;
+}
+
+.profile__info span:first-child {
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.profile__info span:last-child {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.profile__setting input {
+    border: none;
+    padding:10px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 20px rgb(228, 228, 228);
+}
+
+.profile__setting {
+    position: absolute;
+    top:20px;
+    right:20px;
+}
+
+.setting__premium>span {
+    margin: 0 40px;
+    font-size: 20px;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.profile__setting input:hover {
+    background-color: var(--main-color);
+    color:white;
+}

@@ -1,0 +1,22 @@
+
+
+.green__homeline {
+    font-size: 20px;
+}
+
+.green__homeline:first-child > i {
+    margin-right:5px;
+}
+
+.day-left--small {
+    font-size: 12px;
+}
+
+.green__homeline:last-child {
+    font-weight: 600;
+}
+
+.green__homeline:last-child > i {
+    margin-right: 5px;
+}
+

@@ -1,0 +1,31 @@
+.setting--top {
+    margin:40px;
+    font-size: 40px;
+}
+
+.setting--top i {
+    color: grey;
+}
+
+.setting--top i:hover {
+    color: var(--main-color);
+}
+
+.email--setting {
+    font-size: 17px;
+    font-weight: 600;
+    border-bottom: 1px solid rgb(230, 226, 226);
+    display: flex;
+    justify-content: space-between;
+}
+
+.email--setting>span:first-child {
+    border: none;
+}
+
+.email--setting>span:last-child {
+    font-size: 13px;
+    display: block;
+    margin-right: 20px;
+    opacity: 0.5;
+}

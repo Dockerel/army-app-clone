@@ -1,0 +1,364 @@
+#home-body {
+    height:200vh;
+}
+
+.army__home {
+    padding:30px 40px;
+}
+
+.army_date__user {
+    border-style: inset;
+    background-color: white;
+    border-radius: 20px;
+    padding:40px;
+}
+
+
+
+.army_date__user__column {
+    display:flex;
+}
+
+.army_date__user_mark > i {
+    font-size: 28px;
+    color: var(--main-color);
+    margin: 0 15px;
+}
+
+.army_date__user_mark {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border:2px solid rgb(139, 138, 138);
+    width:50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.army__info {
+    margin-left:30px;
+    margin-right: 100px;
+}
+
+.army__info span {
+    display:block;
+    font-weight: 600;
+    font-size: 17px;
+    margin-bottom: 2px;
+}
+
+.army_date__dayinfo {
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.army_date__dayinfo {
+    color:black;
+    font-weight: 600;
+}
+
+
+.day__name {
+    color:rgb(139, 138, 138);
+}
+
+.army_date__user__column:nth-child(2),
+.post--greenline {
+    background-color: var(--main-color);
+    color:white;
+    display:flex;
+    justify-content: space-between;
+    padding: 20px 100px;
+    border-radius: 15px;
+}
+
+.home__greenline {
+    margin:40px 0;
+}
+
+.army_date__user__column:nth-child(3) {
+    display:flex;
+    justify-content: space-between;
+    border-top:1px solid var(--grey);
+    border-bottom:1px solid var(--grey);
+    padding:25px 40px;
+}
+
+.date__row {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.date__row--name {
+    color:#919191;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.date__row--nb {
+    color: black;
+    font-weight: 600;
+    font-size: 20px;
+    display:block;
+    margin-top:10px;
+}
+
+.army_date__graph {
+    width:100%;
+    display:flex;
+    flex-direction: column;
+}
+
+.army__graph--top {
+    display:flex;
+    justify-content: space-between;
+    margin:40px 0;
+    margin-bottom: 25px;
+}
+
+.army__graph--top span:first-child {
+    color:black;
+    font-weight: 600;
+}
+
+.army__graph--top span:last-child {
+    display:block;
+    background-color: var(--main-color);
+    color:white;
+    padding:10px 7px;
+    border-radius: 7px;
+    font-weight: 600;
+}
+
+.army__graph--middle-1 {
+    position: relative;
+}
+
+.army__graph--middle-1 .army__graph--right {
+    position: absolute;
+    width:95%;
+    height: 10px;
+    background-color: var(--main-color);
+    border-radius: 3px;
+}
+
+.army__graph--middle-1 .army__graph--left {
+    top:0;
+    width:100%;
+    height: 10px;
+    background-color: #0fcbcf;
+    position:absolute;
+    border-radius: 3px;
+}
+
+.army__graph--bottom span {
+    display:block;
+    color:grey;
+    font-weight: 600;
+    margin-top:18px;
+    margin-left: 5px;
+}
+
+.army_date__user__column:nth-child(4) {
+    flex-direction: column;
+    border-bottom: 1px solid var(--grey);
+    padding-bottom:30px;
+}
+
+.army__graph--middle-2 {
+    position: relative;
+}
+
+.army__graph--middle-2 .army__graph--right {
+    position: absolute;
+    width:20%;
+    height: 10px;
+    background-color: var(--main-color);
+    border-radius: 3px;
+}
+
+.army__graph--middle-2 .army__graph--left {
+    top:0;
+    width:100%;
+    height: 10px;
+    background-color: #0fcbcf;
+    position:absolute;
+    border-radius: 3px;
+}
+
+@keyframes armydateColor {
+    0% {
+        transform: rotateZ(15deg);
+    }
+    50% {
+        transform: rotateZ(-15deg);
+    }
+    100% {
+        transform: rotateZ(15deg);
+    }
+}
+
+
+.army_date__user__column:last-child {
+    display:flex;
+    flex-direction: column;
+    font-weight: 600;
+    font-size: 18px;
+    justify-content: center;
+    align-items: center;
+    margin:30px 0;
+    padding-top: 30px;
+    animation: armydateColor 1s ease-in-out infinite;
+}
+
+.today__menu {
+    background-color: white;
+    border-radius: 20px;
+    padding:30px;
+}
+
+.today__menu__column:first-child {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+
+.today__menu__column:first-child > span:first-child {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.today__menu__column:first-child > span:last-child {
+    font-size: 10px;
+    color:rgb(88, 87, 87);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e7e6e6;
+    height:20px;
+    width: 50px;
+    border-radius: 10px;
+    margin-left: 5px;
+}
+
+.today__menu__column:nth-child(2) {
+    display:flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--grey);
+    padding-bottom: 20px;
+}
+
+.today__menu__column:nth-child(2) > span:first-child {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.today__menu__column:nth-child(2) > span:last-child {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.today__menu__column:last-child {
+    display:flex;
+    flex-direction: column;
+    font-size: 15px;
+    font-weight: 600;
+    align-items: center;
+}
+
+.today__menu__column:last-child span {
+    padding-top: 25px;
+}
+
+.today__menu__column:last-child span:last-child {
+    margin-bottom: 30px;
+}
+
+
+
+
+.home__salary {
+    padding:30px;
+    background-color: white;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home__salary__detail {
+    width:90%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 600;
+    padding:20px;
+}
+
+.next__salary {
+    border-bottom: 1px solid var(--grey);
+}
+
+
+.detail__salary {
+    font-size: 15px;
+    margin-bottom: 17px;
+}
+
+.detail__salary--underline {
+    font-size: 20px;
+    border-bottom: 5px solid #29c2c5;
+}
+
+.left--armyinfo {
+    display: flex;
+    font-weight: 700;
+    align-items: baseline;
+}
+
+.left--armyinfo div:last-child {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--main-color);
+    border-bottom: 5px solid #0FCBCF;
+    margin-left: 7px;
+}
+
+.home__salary {
+    border-radius: 20px;
+}
+
+.army_date__user,
+.today__menu,
+.home__salary {
+    box-shadow: 0px 5px 20px rgb(228, 228, 228);
+}
+
+@keyframes hideInitialScreen {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+  
+  .initial-screen {
+    color: white;
+    font-size: 132px;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--main-color);
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: hideInitialScreen 0.5s ease-in-out forwards;
+    animation-delay: 0.5s;
+  }
+  

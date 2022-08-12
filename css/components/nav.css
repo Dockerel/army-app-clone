@@ -1,0 +1,49 @@
+.nav__list {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    position: fixed;
+    bottom:0;
+    width:100%;
+    box-sizing: border-box;
+    padding:30px 60px;
+}
+
+.nav__btn i {
+    color:grey;
+}
+
+.home_home i,
+.home_posts i,
+.home_diary i,
+.home_settings i,
+.nav__btn i:hover {
+    color:var(--main-color);
+}
+
+@keyframes appearBtnAnimation {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+  
+  .nav__btn {
+    transform: translateX(-100px);
+    opacity: 0;
+    animation: appearBtnAnimation 0.2s ease-in-out forwards;
+  }
+  
+  .nav__btn:nth-child(2) {
+    animation-delay: 0.3s;
+  }
+  .nav__btn:nth-child(3) {
+    animation-delay: 0.5s;
+  }
+  .nav__btn:nth-child(4) {
+    animation-delay: 0.7s;
+  }

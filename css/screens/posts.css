@@ -1,0 +1,135 @@
+#posts-body {
+    height:100vh;
+}
+
+.army__posts {
+    padding:20px 30px;
+}
+
+.posts__type {
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.post__type {
+    background-color: #cfcdd4;
+    padding:15px 20px;
+    color:grey;
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 10px;
+    border-radius: 20px;
+}
+
+.post__type:first-child {
+    background-color: var(--main-color);
+    color:white;
+}
+
+.post__discharge {
+    display:flex;
+    flex-direction: column;
+    padding:15px 20px;
+    background-color: #ebeaee;
+    font-weight: 600;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    margin:20px 0;
+}
+
+.posts__main {
+    width:100%;
+    background-color: white;
+    padding:20px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+
+.army_type {
+    display:inline-block;
+    font-size: 7px;
+    color:grey;
+    background-color: #cfcdd4;
+    padding:8px;
+    border-radius: 8px;
+}
+
+.post__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.post__content span:first-child {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.post__content span:last-child {
+    font-size: 18px;
+    font-weight: 600;
+    color:var(--grey);
+}
+
+.post--greenline {
+    margin:20px 0;
+}
+
+.post__detail__info {
+    display:flex;
+    flex-direction: column;
+}
+
+.post__detail__info span {
+    font-weight: 600;
+}
+
+.post__detail__info span:first-child {
+    font-size: 18px;
+}
+
+.post__detail__info span:nth-child(2) {
+    font-size: 15px;
+    color:var(--grey);
+    margin:10px 0;
+    margin-bottom: 20px;
+}
+
+.post__detail__info i {
+    color:var(--grey);
+    margin:20px 0;
+}
+
+.post__type,
+.posts__main {
+    box-shadow: 0px 5px 20px rgb(228, 228, 228);
+}
+
+.post__type:hover {
+    background-color: var(--main-color);
+    color: white;
+}
+
+.posts__main {
+    outline: none;
+}
+
+@keyframes postsAnimation {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.posts__main {
+    opacity:0;
+    transform: translateX(-100px);
+    animation: postsAnimation 0.5s ease-in-out forwards;
+}

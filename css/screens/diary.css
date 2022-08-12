@@ -1,0 +1,182 @@
+.diary_mark {
+    color:var(--main-color);
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 30px;
+}
+
+.diary_mark>i {
+    font-size: 35px;
+    margin-right: 40px;
+    margin-top: 10px;
+}
+
+.today_feeling {
+    background-color: white;
+    margin: 0 40px;
+    padding:40px;
+    padding-bottom: 25px;
+    border-radius: 20px;
+}
+
+.feeling_mark--title,
+.feeling_story--title {
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.feeling_marks {
+    display: flex;
+    margin-top: 25px;
+}
+
+.feeling_mark span {
+    display: block;
+    margin-top: 7px;
+}
+
+.feeling_mark i {
+    width:50px;
+    height:50px;
+    background-color: #F5F5F5;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 25px;
+    font-size: 30px;
+    color: #035354;
+}
+
+.feeling_mark:first-child span {
+    margin-left: 4px;
+}
+
+.feeling_mark:nth-child(3) span {
+    margin-left: 4px;
+}
+
+.feeling_mark:last-child span {
+    margin-left: 10px;
+}
+
+.feeling_story--title {
+    display: block;
+    margin: 30px 0;
+}
+
+.feeling_story--text,
+.feeling_story--save {
+    display: block;
+}
+
+.feeling_story--text {
+    width: 100%;
+    padding:0 20px;
+    padding-top: 20px;
+    padding-bottom: 90px;
+    font-size: 15px;
+    border: none;
+}
+
+.feeling_story--btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.feeling_story--text:focus {
+    outline:none;
+}
+
+.feeling_story--save {
+    width:60%;
+    height:60px;
+    background-color: var(--main-color);
+    color:white;
+    font-weight: 600;
+    border:none;
+    border-radius: 10px;
+    font-size: 20px;
+    opacity: 0.5;
+}
+
+.feeling_story--save:hover {
+    opacity:1;
+}
+
+#diary-body {
+    height:100vh;
+}
+
+.pencil--diary {
+    position: fixed;
+    width:60px;
+    height:60px;
+    border-radius: 50%;
+    background-color: var(--main-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color:white;
+    right:40px;
+    bottom:120px;
+}
+
+.feeling__saved {
+    background-color: white;
+    margin:0 40px;
+    margin-top: 40px;
+    padding:20px 30px;
+    display: flex;
+}
+
+.saved--icon {
+    height:70px;
+    width:70px;
+    background-color: #F5F5F5;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.saved--icon>i {
+    color: #035354;
+    font-size: 40px;
+}
+
+.saved--story {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 10px;
+    margin-left: 20px;
+    font-weight: 700;
+}
+
+.saved--story span {
+    font-size: 13px;
+    opacity: 0.7;
+}
+
+.feeling__saved:last-child .saved--story span:last-child {
+    color: #296cf2;
+}
+
+@keyframes pencilMoving {
+    0% {
+        transform: rotateZ(10deg);
+    }
+    50%{
+        transform: rotateZ(-20deg);
+    }
+    100%{
+        transform: rotateZ(10deg);
+    }
+}
+
+.pencil--diary {
+    animation: pencilMoving 2s ease-in-out infinite;
+}
