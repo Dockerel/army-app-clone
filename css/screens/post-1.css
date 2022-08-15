@@ -16,6 +16,7 @@
 
 .post--top_bar i:hover {
     color: var(--main-color);
+    opacity:1;
 }
 
 .post-1__content {
@@ -79,4 +80,31 @@
 
 .post__comment {
     animation-delay: 0.3s;
+}
+
+.nav_comment {
+    border: none;
+}
+
+.nav_comment .fa-camera {
+    transition: opacity 0.2s ease-in-out;
+}
+
+.nav_comment:focus-within .fa-camera {
+    opacity:0;
+}
+
+.nav_comment input {
+    padding: 14px 20px;
+    width: 100%;
+    border: var(--main-border);
+    border-radius: 25px;
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav_comment input:focus {
+    width: 100%;
+    transform: translateX(-3.5%);
+    border:  3px solid var(--main-color);
 }

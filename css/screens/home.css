@@ -219,6 +219,7 @@
     background-color: white;
     border-radius: 20px;
     padding:30px;
+    width:30%
 }
 
 .today__menu__column:first-child {
@@ -350,11 +351,11 @@
   .initial-screen {
     color: white;
     font-size: 132px;
-    height: 100vh;
+    height: 100%;
     width: 100vw;
     background-color: var(--main-color);
     position: absolute;
-    top: 0;
+    top:0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -362,3 +363,16 @@
     animation-delay: 0.5s;
   }
   
+  .home__menu__column__btn:hover {
+    background-color: var(--main-color);
+    color: white;
+  }
+
+  .menu__list {
+    display:flex;
+    justify-content: space-between;
+  }
+
+  .menu__list .today__menu:nth-child(2) {
+    margin:0 30px;
+  }
